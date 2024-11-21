@@ -1,0 +1,9 @@
+services:
+  browserless:
+    image: browserless/chrome:latest
+    container_name: browserless
+    ports:
+      - "3000:3000"
+    environment:
+      - TOKEN=mytoken
+      - CONCURRENT=10
